@@ -10,10 +10,8 @@ body {
 }
 
 #mapid {
-  height: 400px;
-  width: 400px;
-  margin-left: -300px;
-  margin-top: -150px;
+  height: 250px;
+  width: 350px;
 }
 
 productImage {
