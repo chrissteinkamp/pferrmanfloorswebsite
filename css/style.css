@@ -9,6 +9,13 @@ body {
   overflow-x: hidden;
 }
 
+#mapid {
+  height: 400px;
+  width: 400px;
+  margin-left: -300px;
+  margin-top: -150px;
+}
+
 productImage {
   height: 240px !important;
   width: 360px !important;
