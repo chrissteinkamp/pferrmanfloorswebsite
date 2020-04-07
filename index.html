@@ -17,7 +17,6 @@
   </head>
 
   <body>
-
   <div class="loader"></div>
   <div id="myDiv">
     <!--HEADER-->
@@ -243,7 +242,10 @@
             <p class="sub-title pad-bt15">If you have any questions, comments, or concerns please contact us below.<br>We will do our best to get in contact with you shortly.</p>
             <hr class="bottom-line white-bg">
           </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div id="mapid"></div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="loction-info white">
               <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>3901 Alexandria Pike<br>Cold Spring, KY 41076</p>
               <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>pferrmanflooring@gmail.com</p>
@@ -280,6 +282,7 @@
                   </div>
                   <button type="button" onClick="sendEmail()" class="btn btn-primary btn-submit">SEND NOW</button>
                 </div>
+                
               </form>
 
             </div>
@@ -287,6 +290,7 @@
         </div>
       </div>
     </section>
+
     <!---->
     <!---->
     <footer id="footer">
@@ -305,6 +309,7 @@
         </div>
       </div>
     </footer>
+    
     <!---->
   </div>
 
@@ -330,6 +335,17 @@
 
   }
   </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdEJM6MNr0wv3DCV2K7CHGPxK9D1sZ_E&callback=initMap" async defer></script>
+  <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('mapid'), {
+          center: {lat: 39.025224, lng: -84.443667},
+          zoom: 17
+        });
+      }
+    </script>
+    
   <script src="js/jquery.min.js"></script>
   <script src="js/smtp.js"></script>
   <script src="js/jquery.easing.min.js"></script>
